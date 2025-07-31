@@ -1,0 +1,73 @@
+# === DEPENDENCIES ===
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# === TESTING ===
+coverage/
+
+# === NEXT.JS ===
+.next/
+out/
+build/
+
+# === PRODUCTION ===
+dist/
+.cache/
+
+# === SUPABASE ===
+.supabase/
+supabase/.temp/
+supabase/migrations/
+supabase/functions/node/**/node_modules/
+supabase/functions/python/**/__pycache__/
+supabase/functions/python/**/.venv/
+supabase/functions/python/**/.mypy_cache/
+supabase/functions/python/**/.pytest_cache/
+
+# === PYTHON (AI / BACKEND LOGIC) ===
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+
+# === TYPESCRIPT ===
+*.tsbuildinfo
+next-env.d.ts
+
+# === ENV FILES (ALL) ===
+.env
+.env.*
+!.env.example
+
+# === DEBUG LOGS ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# === OS & EDITORS ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# === VERCL ===
+.vercel/
+
+# === JUPYTER (if used for experiments) ===
+.ipynb_checkpoints/
+
+# === SSL KEYS / CERTS ===
+*.pem
